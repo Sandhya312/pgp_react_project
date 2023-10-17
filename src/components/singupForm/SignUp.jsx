@@ -85,7 +85,7 @@ const SignUp=()=> {
         } else {
             console.log(errors);
             setError(errors);
-            navigate('/signup');
+            navigate('/');
         }
     }
 

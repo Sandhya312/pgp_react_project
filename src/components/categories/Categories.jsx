@@ -20,7 +20,7 @@ function Categories() {
         let fetchedUserCate = JSON.parse(localStorage.getItem("ChoosedCategories"))
 
         if(fetchedUserCate){
-            navigate('/')
+            navigate('/home')
         }
         
     }, [navigate]);
@@ -115,7 +115,7 @@ function Categories() {
         } else {
             setError(false)
             saveCategoriesInLocalStorage();
-            navigate("/");
+            navigate("/home");
         }
     }
 
