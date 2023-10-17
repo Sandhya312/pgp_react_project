@@ -25,6 +25,7 @@ function WetherTime() {
 
 
 
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -32,13 +33,11 @@ function WetherTime() {
                 const city = 'moradabad';
                 const data = await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`);
                 const weatherData = await data.json();
-                 console.log("weather data: ",weatherData);
-                 console.log("weather data: ",weatherData.location.localtime);
+               
                
           const dateTime = new Date(weatherData.location.localtime);
         const options = { timeZone: "Asia/Kolkata" };
         const ISTTime = dateTime.toLocaleString("en-US", options);
-        console.log(ISTTime);
 
     
                  setDateTime({ date:ISTTime  })

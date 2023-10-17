@@ -3,7 +3,7 @@ import classes from  './Entertainment.module.css';
 import {useNavigate, Link} from 'react-router-dom';
 import navImage from '../images/image 20.png'
 
-const api_key = '9f8aae453d22e05839e627fa2df8c2eb';
+const api_key = 'ef17f0d49931bd8e548db384befa0408';
 
 const genreIds = [
     { id: 'Action', genreId: 28 },

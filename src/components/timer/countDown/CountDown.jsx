@@ -47,7 +47,7 @@ const CountDown = ({ duration, completed }) => {
     }
 
     const handleComplete = () =>{
-        // console.log('handle complete')
+       
         setPlay(false);
         completed(true);
         setDoneMusic(true);

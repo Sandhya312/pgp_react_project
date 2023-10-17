@@ -24,17 +24,16 @@ function News() {
 
         const data = await response.json();
 
-        console.log("News", data);
+       
         const article = data.articles[10];
-        console.log("article", article);
+      
 
         const dateTime = new Date(article.publishedAt);
-        const year = dateTime.getFullYear();
-        console.log("year", year);
+      
 
         const options = { timeZone: "Asia/Kolkata" };
         const ISTTime = dateTime.toLocaleString("en-US", options);
-        console.log(ISTTime);
+     
 
         const date = ISTTime;
 
@@ -46,7 +45,7 @@ function News() {
           url: article.url,
         });
 
-        console.log("state news", news);
+      
       } catch (error) {
         console.log("something went wrong", error);
       }

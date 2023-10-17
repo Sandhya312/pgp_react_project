@@ -79,11 +79,11 @@ const SignUp=()=> {
 
         if(errors.nameIsValid.length ===0 && errors.usernameIsValid.length === 0 && errors.emailIsValid.length === 0 && errors.mobileIsValid.length === 0 &&
          errors.checkBoxIsValid.length === 0 ){
-            console.log("no error");
+      
             localStorage.setItem('userData', JSON.stringify({...signUpData}))
             navigate('/categories');
         } else {
-            console.log(errors);
+          
             setError(errors);
             navigate('/');
         }
