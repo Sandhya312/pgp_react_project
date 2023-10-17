@@ -1,0 +1,113 @@
+.weatherTime{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.weatherTime > .TimeDate {
+    background-color: #FF4ADE;
+    height: 30%;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.weatherTime > .wether {
+    background-color: #101744;
+    height: 70%;
+    border-radius: 0 0 10px 10px;
+    padding: 2% 0;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.weatherTime > .wether > .rain{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3%;
+    font-size: 0.8rem;
+}
+
+.weatherTime > .wether > .rain > img {
+    width: 40%;
+}
+
+.weatherTime > .wether > .temp{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weatherTime > .wether > .separator{
+    width: 1px;
+    height: 60%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 1px;
+}
+
+.weatherTime > .wether > .temp > .celcius{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.weatherTime > .wether > .temp > .mbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    font-size: 70%;
+}
+
+.weatherTime > .wether > .temp > .mbar > .mbarIcon {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.weatherTime > .wether > .wind{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+}
+
+.weatherTime > .wether > .wind > .windSec{
+    width: 100%;
+    display: flex;
+    padding: 0 20% 0 10%;
+}
+
+.weatherTime > .wether > .wind > .windSec > p{
+    font-size: 75%;
+    text-align: center;
+}
+
+.weatherTime > .wether > .wind > .windSec > .icon, .weatherTime > .wether > .wind > .humadity > .icon{
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+.weatherTime > .wether > .wind > .humadity{
+    display: flex;
+    padding: 0 20% 0 10%;
+    justify-content: space-between;
+    font-size: 60%;
+}

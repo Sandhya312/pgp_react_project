@@ -1,0 +1,17 @@
+.countDownCon{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countDownCon > .circle{
+    font-size: 1.4rem;
+    margin: auto;
+    padding: 5%;
+    border-radius: 50%;
+    background-color: #181D37;
+}
